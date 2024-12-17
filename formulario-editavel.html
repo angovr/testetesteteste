@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Editável</title>
+    <style>
+        * { margin: 0; padding: 0; text-indent: 0; }
+        .s1 { color: black; font-family: Calibri, sans-serif; font-style: normal; font-weight: normal; font-size: 11pt; }
+        .s2 { color: #FFF; font-family: "Arial Black", sans-serif; font-style: normal; font-size: 8pt; }
+        table, tbody { vertical-align: top; overflow: visible; }
+    </style>
+</head>
+<body>
+    <table style="border-collapse: collapse; margin-left: 29.202pt;" cellspacing="0">
+        <tr style="height: 41pt;">
+            <td style="width: 143pt;">
+                <p class="s1" style="padding-left: 10pt;">Responsável pelo Relatório:</p>
+                <input type="text" name="responsavel" style="width: 90%; margin: 5px 0;">
+                <p class="s1" style="padding-left: 10pt;">Semana:</p>
+                <input type="text" name="semana" style="width: 90%; margin: 5px 0;">
+            </td>
+            <td style="width: 102pt;">
+                <p class="s1" style="padding-left: 8pt;">Data:</p>
+                <input type="date" name="data" style="width: 90%; margin: 5px 0;">
+            </td>
+            <td style="width: 155pt;">
+                <p class="s1" style="padding-left: 68pt; text-align: center;">Turno:</p>
+                <input type="text" name="turno" style="width: 90%; margin: 5px auto; display: block;">
+            </td>
+            <td style="width: 160pt;">
+                <p class="s1" style="padding-left: 56pt;">Unidade de Negócio:</p>
+                <input type="text" name="unidade" style="width: 90%; margin: 5px auto;">
+            </td>
+        </tr>
+    </table>
+
+    <table style="border-collapse: collapse; margin-left: 5.825pt;" cellspacing="0">
+        <tr>
+            <td bgcolor="#808080"><p class="s2">Equipamento</p></td>
+            <td bgcolor="#808080"><p class="s2">Descrição do Problema</p></td>
+            <td bgcolor="#808080"><p class="s2">Resolução, Causa Raiz</p></td>
+            <td bgcolor="#808080"><p class="s2">Paragem (min)</p></td>
+            <td bgcolor="#808080"><p class="s2">Técnico Executante</p></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="equipamento" style="width: 90%;"></td>
+            <td><textarea name="problema" style="width: 90%;"></textarea></td>
+            <td><textarea name="resolucao" style="width: 90%;"></textarea></td>
+            <td><input type="number" name="paragem" style="width: 90%;"></td>
+            <td><input type="text" name="tecnico" style="width: 90%;"></td>
+        </tr>
+    </table>
+</body>
+</html>
